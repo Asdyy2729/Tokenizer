@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Character-level Tokenizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Character-level Tokenizer — Encode & Decode</h2>
+
+  <div class="row">
+    <label class="label">Text to encode</label>
+    <input id="inputText" type="text" placeholder="Type here (e.g. Hello, world!)" size="60" />
+    <button id="btnEncode">Encode</button>
+  </div>
+
+  <div class="row">
+    <label class="label">Encoded tokens (JSON)</label>
+    <pre id="encodedTokens">[]</pre>
+  </div>
+
+  <div class="row">
+    <label class="label">Decoded from above tokens</label>
+    <pre id="decodedFromEncoded"></pre>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <label class="label">Paste tokens to decode</label>
+    <textarea id="tokensInput" placeholder='Example: [1,2,3] OR 1,2,3 OR 1 2 3'></textarea>
+    <button id="btnDecodeTokens">Decode tokens</button>
+  </div>
+
+  <div class="row">
+    <label class="label">Decoded text</label>
+    <pre id="decodedTokensResult"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
